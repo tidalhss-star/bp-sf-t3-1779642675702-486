@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="마포에서 가장 핫한 AI 트렌드 강남 셔츠룸. 브로들만 아는 힙한 공간, 지금 전화 010-6279-0862. 거친 콘크리트 감성의 스트리트 브루탈리즘 공간.">
+    <meta name="keywords" content="강남 셔츠룸, 마포 셔츠룸, AI 트렌드, 셔츠룸 추천, 브로, 힙한 공간, 콘크리트 감성, 스트리트 브루탈리즘">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <meta property="og:title" content="마포 AI트렌드 강남 셔츠룸 | 브로들의 공간">
+    <meta property="og:description" content="마포에서 가장 핫한 AI 트렌드 강남 셔츠룸. 브로들만 아는 힙한 공간, 지금 전화 010-6279-0862.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://example.com">
+    <title>블로그 | 마포 AI트렌드 강남 셔츠룸</title>
+    <style>
+        /* RESET & BASE */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: #1a1a1a;
+            color: #d4d4d4;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        /* STREET BRUTALIST DNA */
+        h1, h2, h3, h4 { 
+            font-weight: 900; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            color: #f5f5f5;
+        }
+        h1 { font-size: 3.5rem; line-height: 1; margin-bottom: 1.5rem; text-shadow: 4px 4px 0 #ff3b3b; }
+        h2 { font-size: 2.5rem; margin-bottom: 1.2rem; border-left: 8px solid #ff3b3b; padding-left: 1rem; }
+        h3 { font-size: 1.8rem; margin-bottom: 1rem; }
+        p, li, blockquote { font-size: 1.1rem; margin-bottom: 1.2rem; color: #b0b0b0; }
+        a { color: #ff3b3b; text-decoration: none; font-weight: 700; border-bottom: 2px solid transparent; transition: 0.2s; }
+        a:hover { border-bottom-color: #ff3b3b; color: #fff; }
+        /* LAYOUT : full bleed, asymmetric */
+        .container { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            padding: 0 2rem;
+            position: relative;
+        }
+        section, header, footer { 
+            padding: 4rem 0; 
+            border-bottom: 1px solid #333;
+        }
+        section:last-of-type { border-bottom: none; }
+        /* HEADER + NAV */
+        header {
+            background: #111;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 20px,
+                rgba(255,59,59,0.03) 20px,
+                rgba(255,59,59,0.03) 40px
+            );
+            pointer-events: none;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #f5f5f5;
+            text-shadow: 3px 3px 0 #ff3b3b;
+            letter-spacing: 4px;
+        }
+        .logo span { color: #ff3b3b; }
+        /* HAMBURGER MENU */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+            background: none;
+            border: none;
+        }
+        .hamburger span {
+            width: 30px;
+            height: 4px;
+            background: #f5f5f5;
+            margin: 4px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        nav ul li a {
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            border-color: #ff3b3b;
+            background: rgba(255,59,59,0.1);
+        }
+        /* TEL LINK */
+        .tel-link {
+            display: inline-block;
+            background: #ff3b3b;
+            color: #111 !important;
+            padding: 0.8rem 2rem;
+            font-weight: 900;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+            border-bottom: none !important;
+        }
+        .tel-link:hover {
+            background: #fff;
+            color: #111 !important;
+            transform: scale(1.05);
+        }
+        /* BLOG POST */
+        .blog-post {
+            background: #222;
+            padding: 3rem;
+            border-left: 6px solid #ff3b3b;
+            margin: 2rem 0;
+            position: relative;
+        }
+        .blog-post::after {
+            content: 'BRO';
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: #ff3b3b;
+            opacity: 0.3;
+            letter-spacing: 4px;
+        }
+        .blog-post .meta {
+            font-size: 0.85rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+        .blog-post .meta span {
+            background: #ff3b3b;
+            color: #111;
+            padding: 0.2rem 0.8rem;
+            font-weight: 700;
+        }
+        .blog-post p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        .blog-post blockquote {
+            border-left: 4px solid #ff3b3b;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #ccc;
+            margin: 1.5rem 0;
+        }
+        .blog-post .highlight {
+            background: rgba(255,59,59,0.15);
+            padding: 0.2rem 0.5rem;
+            font-weight: 700;
+            color: #ff3b3b;
+        }
+        /* FOOTER */
+        footer {
+            background: #111;
+            text-align: center;
+            border-top: 4px solid #ff3b3b;
+        }
+        footer p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        footer .tel-link {
+            margin-top: 1rem;
+        }
+        /* RESPONSIVE 768 */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
+            h3 { font-size: 1.4rem; }
+            .container { padding: 0 1rem; }
+            section, header, footer { padding: 2.5rem 0; }
+            .header-inner { flex-direction: column; align-items: flex-start; }
+            .hamburger { display: flex; }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 0.5rem;
+                padding: 1rem 0;
+            }
+            nav ul.active { display: flex; }
+            nav ul li a { width: 100%; text-align: left; padding: 0.8rem 1rem; }
+            .blog-post { padding: 1.5rem; }
+            .blog-post .meta { font-size: 0.75rem; }
+        }
+        /* EXTRA GRIT */
+        ::selection {
+            background: #ff3b3b;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="logo">마포<span>AI</span>셔츠룸</div>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/about">소개</a></li>
+                    <li><a href="/blog">블로그</a></li>
+                    <li><a href="/contact">연락처</a></li>
+                    <li><a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h1>블로그</h1>
+            <p style="font-size:1.2rem; margin-bottom:2rem;">브로들을 위한 리얼한 이야기, 여기 다 모였어.</p>
+
+            <article class="blog-post">
+                <div class="meta"><span>NEW</span> 2025.02.18 · by 브로</div>
+                <h2>강남 셔츠룸에서 AI 트렌드 만나는 법</h2>
+                <p>야, 브로. 요즘 마포에서 제일 핫한 얘기가 뭔지 알아? 맞아, 바로 <span class="highlight">AI 트렌드</span>야. 근데 그걸 어디서 느끼냐고? 당연히 <strong>강남 셔츠룸</strong>이지. 내가 솔직히 말하는데, 처음에는 "셔츠룸에서 AI가 무슨 상관이야?" 싶었거든. 근데 막상 가보니까 완전히 생각이 바뀌었어.</p>
+                <p>거기는 그냥 술 마시는 공간이 아니야. <em>거친 콘크리트 벽</em>에 빔 프로젝터로 AI 아트가 흘러가고, 테이블마다 태블릿으로 주문하는 시스템. 심지어 음악도 AI가 실시간으로 믹스하는 거 있지. 처음에는 좀 어색했는데, 한 시간쯤 있다 보니까 "아, 이게 미래구나" 싶더라고.</p>
+                <blockquote>
+                    "진짜 브로들은 이미 알고 있어. 강남 셔츠룸은 더 이상 옛날 방식이 아니야. 여기는 AI와 감성이 만나는 실험실."
+                </blockquote>
+                <p>내 친구 영호가 거기서 첫 방문했는데, AI가 추천해준 칵테일 마시면서 "이거 완전 내 스타일" 하면서 좋아하더라. 심지어 벽에 있는 디지털 아트가 우리 웃음에 반응해서 바뀌는 거야. 실화? 맞아. 그날 우리 다섯 명이서 3시간 동안 떠들다가 나왔는데, 다들 "또 가자" 했어.</p>
+                <p>사장님 말로는 매주 AI 아티스트 초대전도 한다더라. 그리고 <span class="highlight">전화 010-6279-0862</span>로 예약하면 AI가 분석한 네 취향에 맞는 자리까지 배정해준대. 브로, 이건 놓치면 안 되는 거잖아. 나도 다음 주에 또 갈 생각이야. 혼자 가도 괜찮고, 브로들끼리 와도 완전 재밌어. 진짜 추천한다.</p>
+                <p style="margin-top:2rem; font-weight:700;">👉 지금 바로 전화 걸어봐. <a href="tel:010-6279-0862" class="tel-link" style="display:inline-block; margin-top:0.5rem;">010-6279-0862</a></p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 마포 AI트렌드 강남 셔츠룸 · 브로들의 힙한 공간</p>
+            <p style="margin:0.5rem 0;">서울 마포구 · AI 트렌드 셔츠룸 · 스트리트 브루탈리즘 감성</p>
+            <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
